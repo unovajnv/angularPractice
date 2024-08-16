@@ -1,0 +1,6 @@
+<p>parent works!</p>
+<div>
+  <div *ngFor="let d of dataArray">
+    <app-child [data] = "d" (sendToParent) = "updateData($event)" (toUpdate) = "updateName($event)"></app-child>
+  </div>
+</div>
